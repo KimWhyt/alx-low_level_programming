@@ -19,7 +19,8 @@ n, ...)
 	for (index = 0; index < n; index++)
 	{
 		printf("%d", va_arg(nums, int));
-		if (index != (n - 1)	&& seperator != NULL)
+
+			if (index != n - 1 && seperator != NULL)
 				printf("%s", seperator);
 	}
 
