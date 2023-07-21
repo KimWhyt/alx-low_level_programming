@@ -21,21 +21,21 @@ va_start(list, format);
 		{
 			switch (format[i])
 			{
-				case'c';
+				case'c':
 					printf("%s%c", sep, va_arg(list, int));
 					break;
-				case'i';
+				case'i':
 					printf("%s%d", sep, va_arg(list, int));
 					break;
-				case'f';
+				case'f':
 					printf("%s%d", sep, va_arg(list, int));
 					break;
-				case's';
-					str = va_arg(list, char*);
+				case's':
+				str = va_arg(list, char*);
 
-					if (!str)
-						str = "(nil)";
-					printf("%s%s", sep, str);
+				if (!str)
+					str = "(nil)";
+				printf("%s%s", sep, str);
 					break;
 				default:
 					i++;
