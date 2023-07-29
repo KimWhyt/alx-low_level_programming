@@ -2,8 +2,8 @@
 
 
 /**
- * puts_recursion - print a string followed by a new line
- * @s: the sting to print 
+ * _puts_recursion - print a string followed by a new line
+ *@s:the sting to print
  *
  * returns: nothing
  */
@@ -17,5 +17,5 @@ void _puts_recursion(char *s)
 
 	_putchar(*s);
 	s++;
-	puts_recursion(s);
+	_puts_recursion(s);
 }
